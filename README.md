@@ -27,15 +27,15 @@ Trust is enforced through a mandatory **security deposit held in escrow** — au
 
 ## Tech Stack
 
-| Layer | Technology | Why |
-|---|---|---|
-| Frontend | React 19 + Vite 8 | Fast dev, industry standard |
-| Styling | TailwindCSS v4 + CSS custom properties | Design system with tokens |
-| State | React Context | Right size for current complexity |
-| Backend | Node.js + Express.js | Ecosystem, JS full-stack, familiar |
-| Database | MongoDB + Mongoose | Flexible listing schema, document model |
-| Auth | JWT (access + refresh token) | Stateless, scalable |
-| Security | bcrypt, helmet, CORS, httpOnly cookies | See security docs |
+| Layer    | Technology                             | Why                                     |
+| -------- | -------------------------------------- | --------------------------------------- |
+| Frontend | React 19 + Vite 8                      | Fast dev, industry standard             |
+| Styling  | TailwindCSS v4 + CSS custom properties | Design system with tokens               |
+| State    | React Context                          | Right size for current complexity       |
+| Backend  | Node.js + Express.js                   | Ecosystem, JS full-stack, familiar      |
+| Database | MongoDB + Mongoose                     | Flexible listing schema, document model |
+| Auth     | JWT (access + refresh token)           | Stateless, scalable                     |
+| Security | bcrypt, helmet, CORS, httpOnly cookies | See security docs                       |
 
 ## Architecture
 
@@ -57,6 +57,7 @@ See [Schema Documentation](./docs/database/schema.md) for full schema with reaso
 All API routes are under `/api/`. See [API Reference](./docs/api/api-reference.md) for full documentation.
 
 **Core flows:**
+
 - `POST /api/auth/register` + `POST /api/auth/login`
 - `GET /api/listings` + `POST /api/listings`
 - `POST /api/requests` + `PATCH /api/requests/:id/approve`
@@ -64,16 +65,16 @@ All API routes are under `/api/`. See [API Reference](./docs/api/api-reference.m
 
 ## Project Status
 
-| Layer | Status |
-|---|---|
-| Frontend UI | Complete (mock data) |
-| Backend server | In progress |
-| Authentication | In progress |
-| Listings API | In progress |
-| Borrow Requests API | Planned |
-| Escrow system | Planned |
-| Frontend-API integration | Planned |
-| AI features | Future |
+| Layer                    | Status               |
+| ------------------------ | -------------------- |
+| Frontend UI              | Complete (mock data) |
+| Backend server           | In progress          |
+| Authentication           | In progress          |
+| Listings API             | In progress          |
+| Borrow Requests API      | Planned              |
+| Escrow system            | Planned              |
+| Frontend-API integration | Planned              |
+| AI features              | Future               |
 
 See [Progress Document](./docs/development/progress.md) for full status.
 
@@ -95,6 +96,7 @@ cd Frontend
 npm install
 npm run dev
 ```
+
 Runs on http://localhost:5173
 
 ### Backend (once implemented)
@@ -105,6 +107,7 @@ npm install
 cp .env.example .env  # fill in your values
 npm run dev
 ```
+
 Runs on http://localhost:5000
 
 ## Environment Variables (Backend)
@@ -131,4 +134,4 @@ NODE_ENV=development
 
 ---
 
-*Built by Shahadat Hussain as a full-stack learning project demonstrating backend engineering, system design, API design, authentication, and scalability thinking.*
+_Built by Shahadat Hussain as a full-stack learning project demonstrating backend engineering, system design, API design, authentication, and scalability thinking._
